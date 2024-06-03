@@ -1,5 +1,6 @@
 @font-face {
-    font-family: Verdana;
+    font-family: Verdana,
+    font-weight: bold;
 }
 
 #app-container {
