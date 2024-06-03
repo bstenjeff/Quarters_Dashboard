@@ -200,7 +200,7 @@ qtype_list = merged_df["Incident Type"].unique().tolist()
 
 app.layout = html.Div([
     html.Br(),
-    html.H1("Welcome to the TCS Quarter Analytics Dashboard",style = {'color':'#303030', 'textAlign': 'center','font-size':30, 'font':'Verdana'}),
+    html.Label("Welcome to the TCS Quarter Analytics Dashboard",style = {'color':'#303030', 'textAlign': 'center','font-size':30, 'font':'Verdana'}),
     dcc.Tabs([
         dcc.Tab(label='All Students/Student Sub-Groups',style = {'font':'Verdana'},children = html.Div([description_card(1),
             html.Br(),
