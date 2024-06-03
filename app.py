@@ -182,7 +182,7 @@ def plt_incidenttype_barchart(df,tab,housefilter = None, gradefilter = None,date
 
     return fig 
 
-app.css.config.serve_locally = True
+#app.css.config.serve_locally = True
 app = dash.Dash(
     __name__,
     meta_tags=[{"name": "viewport", "content": "width=device-width, initial-scale=1"}],
