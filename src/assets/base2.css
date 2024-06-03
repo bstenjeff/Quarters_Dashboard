@@ -1,7 +1,5 @@
 @font-face {
-    font-family: Acumin;
-    font-weight: bold;
-    src: url("Acumin-BdPro.otf") format("opentype");
+    font-family: Verdana;
 }
 
 #app-container {
