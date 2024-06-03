@@ -182,13 +182,13 @@ def plt_incidenttype_barchart(df,tab,housefilter = None, gradefilter = None,date
 
     return fig 
 
-#app.css.config.serve_locally = True
 app = dash.Dash(
     __name__,
     meta_tags=[{"name": "viewport", "content": "width=device-width, initial-scale=1"}],
 )
 
 app.title = ""
+app.css.config.serve_locally = True
 server = app.server
 app.config.suppress_callback_exceptions = True
 clinic_list = merged_df["Incident Type"].unique()
