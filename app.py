@@ -85,8 +85,7 @@ def description_card(tab):
         return html.Div(
                 id="description-card1",
                 children=[
-                    html.H5("TCS Quarter Analytics"),
-                    #html.H3("Welcome to the TCS Quarter Analytics Dashboard"),
+                    html.Label("TCS Quarter Analytics"),
                     html.Div(
                         id="intro1",
                         children=descr,
@@ -97,8 +96,7 @@ def description_card(tab):
         return html.Div(
                 id="description-card2",
                 children=[
-                    html.H5("TCS Quarter Analytics"),
-                    #html.H3("Welcome to the TCS Quarter Analytics Dashboard"),
+                    html.Label("TCS Quarter Analytics"),
                     html.Div(
                         id="intro2",
                         children=descr,
@@ -200,19 +198,19 @@ qtype_list = merged_df["Incident Type"].unique().tolist()
 
 app.layout = html.Div([
     html.Br(),
-    html.Label("Welcome to the TCS Quarter Analytics Dashboard",style = {'color':'#303030', 'textAlign': 'center','font-size':30, 'font-family':'verdana'}),
+    html.H1("Welcome to the TCS Quarter Analytics Dashboard",style = {'color':'#303030', 'textAlign': 'center','font-size':30}),
     dcc.Tabs([
-        dcc.Tab(label='All Students/Student Sub-Groups',style = {'font-family':'verdana'},children = html.Div([description_card(1),
+        dcc.Tab(label='All Students/Student Sub-Groups',children = html.Div([description_card(1),
             html.Br(),
-            html.Label('Select House(s)',style = {'font-family':'verdana', 'text-indent':'25px'}),
+            html.Label('Select House(s)',style = {'text-indent':'25px'}),
             dcc.Dropdown(['All Houses','Bethune','Bickle','Brent','Burns','Hodgetts','Ketchum','Orchard','Scott','Rigby','Wright'],id='house_dropdown_tab1',value = "All Houses",optionHeight=25, style={"color": "#3b97c4",
     "font-family": "verdana","font-size":"90%","width": "60%",'margin-left':'12px'}),
     html.Br(),
-            html.Label('Select Q Type(s)',style = {'font-family':'verdana','text-indent':'25px'}),
+            html.Label('Select Q Type(s)',style = {'text-indent':'25px'}),
             dcc.Dropdown(['Grade 9', 'Grade 10', 'Grade 11','Grade 12'],value =['Grade 9', 'Grade 10', 'Grade 11','Grade 12'],id = 'grade_dropdown_tab1',multi = True,optionHeight=25,style={"color": "#3b97c4",
-    "font-family": "verdana","font-size":"100%","width": "60%",'margin-left':'12px'}),
+    "font-family": "verdana","font-size":"90%","width": "60%",'margin-left':'12px'}),
             html.Br(),
-            html.Label('Select Date Range',style={'font-family':'verdana','text-indent':'25px'}),
+            html.Label('Select Date Range',style={'text-indent':'25px'}),
             dcc.RangeSlider(
                 id='dates_slider',
                 min = unixTimeMillis(slider_daterange.min()),
@@ -259,7 +257,7 @@ app.layout = html.Div([
                                                             'textAlign': 'center'}),
                 html.Div(id='click-data_incident_types_table')],style={'border':"100px whitesolid"})])),
 
-          dcc.Tab(label = 'Individual Students',style = {'font-family':'verdana'},children = html.Div(children=[description_card(2),
+          dcc.Tab(label = 'Individual Students',children = html.Div(children=[description_card(2),
             html.Br(),
             html.Label('Filter By House',style = {'text-indent':'25px'}),
             dcc.Dropdown(['All Houses','Bethune','Bickle','Brent','Burns','Hodgetts','Ketchum','Orchard','Scott','Rigby','Wright'],id='house_dropdown_tab2',value = "All Houses",optionHeight=25, style={"color": "#3b97c4",
