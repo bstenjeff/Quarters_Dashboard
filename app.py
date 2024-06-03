@@ -199,9 +199,9 @@ qtype_list = merged_df["Incident Type"].unique().tolist()
 
 app.layout = html.Div([
     html.Br(),
-    html.H1("Welcome to the TCS Quarter Analytics Dashboard",style = {'color':'#303030', 'textAlign': 'center','font-size':30}),
+    html.H1("Welcome to the TCS Quarter Analytics Dashboard",style = {'color':'#303030', 'textAlign': 'center','font-size':30, 'font':'Verdana'}),
     dcc.Tabs([
-        dcc.Tab(label='All Students/Student Sub-Groups',children = html.Div([description_card(1),
+        dcc.Tab(label='All Students/Student Sub-Groups',style = {'font':'Verdana'},children = html.Div([description_card(1),
             html.Br(),
             html.Label('Select House(s)',style = {'text-indent':'25px'}),
             dcc.Dropdown(['All Houses','Bethune','Bickle','Brent','Burns','Hodgetts','Ketchum','Orchard','Scott','Rigby','Wright'],id='house_dropdown_tab1',value = "All Houses",optionHeight=25, style={"color": "#3b97c4",
