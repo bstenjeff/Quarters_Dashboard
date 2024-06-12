@@ -549,4 +549,4 @@ def display_click_data_tab2(selectedData,student,dates):
     return [table,filtersdesc,time_fig1,time_fig2,filtersdesc]
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(debug=True,port=8050)
