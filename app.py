@@ -230,22 +230,18 @@ app.layout = html.Div([
                                                             'textAlign': 'center'}),
                 html.Div([
                     dcc.Graph(id = 'incident_type_bar_plot',
-                    className="two columns",
                     style={"width":'60%',"height":1000, "margin": 0, 'display': 'inline-block'}
                 ),
                 html.Div([
                     dcc.Graph(id='click-data_time_scatter_plot', 
-                    className="two columns",
                     style={"width":'10%', "height":500,"margin": 0, 'display': 'inline-block'}),
                     dcc.Graph(id='click-data_time_scatter_plot_cumulative', 
-                    className="two columns",
                     style={"width":'10%',"height":500,"margin": 0, 'display': 'inline-block'}),
                     html.Label(".",style={"background-color": "#ffffff","color":"#ffffff"}),
                     html.Label(".",style={"background-color": "#ffffff","color":"#ffffff"}),
                     html.Label(".",style={"background-color": "#ffffff","color":"#ffffff"}),
                     html.Label(".",style={"background-color": "#ffffff","color":"#ffffff"})
                     ])],
-                className="row"),
                 html.Br(),
                 html.Label('RAW PASTORAL REPORT DATA',style={"color": "#3795FF",
                                                             "font-family": "verdana",
@@ -294,22 +290,18 @@ app.layout = html.Div([
                                                             'textAlign': 'center'}),
                 html.Div([
                     dcc.Graph(id = 'incident_type_bar_plot2',
-                    className="two columns",
                     style={"width":'60%', "height":1000,"margin": 0, 'display': 'inline-block'}
                 ),
                 html.Div([
                     dcc.Graph(id='click-data_time_scatter_plot2', 
-                    className="two columns",
                     style={"width":'40%', "height":500,"margin": 0, 'display': 'inline-block'}),
                     dcc.Graph(id='click-data_time_scatter_plot_cumulative2', 
-                    className="two columns",
                     style={"width":'40%', "height":500, "margin": 0, 'display': 'inline-block'}),
                     html.Label(".",style={"background-color": "#ffffff","color":"#ffffff"}),
                     html.Label(".",style={"background-color": "#ffffff","color":"#ffffff"}),
                     html.Label(".",style={"background-color": "#ffffff","color":"#ffffff"}),
                     html.Label(".",style={"background-color": "#ffffff","color":"#ffffff"})
                     ])],
-                className="row"),
                 html.Br(),
                 html.Label('RAW PASTORAL REPORT DATA',style={"color": "#3795FF",
                                                             "font-family": "verdana",
