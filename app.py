@@ -255,7 +255,7 @@ app.layout = html.Div([
                                                             "font-family": "verdana",
                                                             "font-size":"95%",
                                                             'textAlign': 'center'}),
-                html.Div(id='click-data_incident_types_table')],style={'border':"100px whitesolid"})])),
+                html.Div(id='click-data_incident_types_table')],style={'border':"0px whitesolid"})])),
 
           dcc.Tab(label = 'Individual Students',children = html.Div(children=[description_card(2),
             html.Br(),
@@ -320,7 +320,7 @@ app.layout = html.Div([
                                                             "font-size":"95%",
                                                             'textAlign': 'center',
                                                             'background-color':"C2EEFF" }),
-                html.Div(id='click-data_incident_types_table2')],style={'border':"100px whitesolid"})]))]),html.Br()
+                html.Div(id='click-data_incident_types_table2')],style={'border':"0px whitesolid"})]))]),html.Br()
 ])
 
 
