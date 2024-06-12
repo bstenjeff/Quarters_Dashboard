@@ -301,7 +301,7 @@ app.layout = html.Div([
                     html.Label(".",style={"background-color": "#ffffff","color":"#ffffff"}),
                     html.Label(".",style={"background-color": "#ffffff","color":"#ffffff"}),
                     html.Label(".",style={"background-color": "#ffffff","color":"#ffffff"})
-                    ])],
+                    ])]),
                 html.Br(),
                 html.Label('RAW PASTORAL REPORT DATA',style={"color": "#3795FF",
                                                             "font-family": "verdana",
